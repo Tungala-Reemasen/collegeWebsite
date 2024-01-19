@@ -1,0 +1,80 @@
+.container {
+    width: 100%;
+    margin:0px auto;
+}
+.logo {
+width:100%;
+}
+nav {
+width: 100%;
+float: left;
+background: #f0f2f5;
+padding:15px 0px;
+}
+nav a {
+color: #1d1b1b;
+text-decoration: none;
+font-family:Georgia;
+font-size: 16px;
+padding:2px 20px;
+}
+.dropbtn {
+background-color: #f0f2f5;
+color: rgb(28, 23, 23);
+font-family:Georgia;
+padding: 14px 16px;
+border: none;
+cursor: pointer;
+font-size: 100%;
+outline: none;
+}
+
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f0f2f5;
+min-width: 400%;
+box-shadow: 0px 8px 16px 0px rgba(243, 224, 224, 0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+float: none;
+color: rgb(12, 16, 16);
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #eedbdb}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.dropdown:hover .dropbtn {
+background-color:#f0f2f5;
+}
+.image-container {
+float: left;
+width:100%;
+height:auto;
+max-width: 100%;
+position: relative;
+margin: 10px;
+clear: both;
+display: flex;
+justify-content: center;
+
+}
+
+.image-container img {
+width: 40%;
+height:auto;
+}

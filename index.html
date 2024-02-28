@@ -3,13 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PVPSIT</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+    <style>
+     .container {
+            width: 1700px;
+            margin:0px auto;
+       }
+        .logo {
+        width:95%;
+    }
+    nav {
+        width: 100%;
+        float: left;
+        background: #f0f2f5;
+        padding:15px 0px;
+    }
+    nav a {
+        color: #1d1b1b;
+        text-decoration: none;
+        font-family:Georgia;
+        font-size: 16px;
+        padding:2px 20px;
+    }
+    .dropbtn {
+        background-color: #f0f2f5;
+        color: rgb(28, 23, 23);
+        font-family:Georgia;
+        padding: 14px 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f0f2f5;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(243, 224, 224, 0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: rgb(12, 16, 16);
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown-content a:hover {background-color: #eedbdb}
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      
+      .dropdown:hover .dropbtn {
+        background-color:#f0f2f5;
+      }
+ .mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 2000px;
+  position: relative;
+  margin: relative;
+}
+/* The dots/bullets/indicators */
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 100%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+        .event {
+    width: 31%;
+    margin-right: 1%;
+    float: left;
+}
+.event div {
+    padding:10px;
+    background-color: #f0f3fa;
+}
+.event ul li {
+    margin-bottom: 20px;
+    width: 100%;
+    float: left;
+}
+    
+</style>
 </head>
 <body>
     <div class="container">
-        <img src="http://pvpsit.ac.in/new_images/head.jpg" class="logo">
-    </div>
+        <img src="https://www.pvpsiddhartha.ac.in/new_images/head.jpg" class="logo">
+        </div>
         <nav>
             <div class="container">
                 <a href="#">Home</a> 
@@ -24,55 +134,21 @@
                     <a href="#">Academic Council</a>
                     </div>
                   </div>
-                  <div class="dropdown">
-                    <button class="dropbtn">Admission</button>
-                    <div class="dropdown-content">
-                    <a href="#">Admission Procedure</a>
-                    <a href="#">Fee Structure</a>
-                    <a href="#">Programs Offered</a>
-                    <a href="#">Why join PVPSIT?</a>
-                    <a href="#">Hostel Information</a>
-                    <a href="#">FAQ</a>
-                    <a href="#">Contact</a>
-                    </div>
-                  </div> 
-                  <div class="dropdown">
-                    <button class="dropbtn">Academics</button>
-                    <div class="dropdown-content">
-                    <a href="#">Academic Calender</a>
-                    <a href="#">Programs Offered</a>
-                    <a href="#">Academic Regulations</a>
-                    <a href="#">Curriculum & Syllabus</a>
-                    <a href="#">Teaching & Evalution Methods</a>
-                    <a href="#">Outcome Based Education</a>
-                    <a href="#">Feedback System</a>
-                    <a href="#">List of Holidays</a>
-                    </div>
-                  </div> 
-                  <div class="dropdown">
-                    <button class="dropbtn">Autonomous</button>
-                    <div class="dropdown-content">
-                    <a href="#">Online Payment System</a>
-                    <a href="#">Notifications</a>
-                    <a href="#">Time Tables</a>
-                    <a href="#">Old Questions Papers</a>
-                    </div>
-                  </div> 
-                  <div class="dropdown">
-                    <button class="dropbtn">Departments</button>
-                    <div class="dropdown-content">
-                    <a href="#">Computer Science and Engineering (CSE)</a>
-                    <a href="#">Computer Science and Engineering (Artificial Intelligence and Machine Learning)(CSM)</a>
-                    <a href="#">Computer Science and Engineering (Data Science)(CSD)</a>
-                    <a href="#">Information Technology (INF)</a>
-                    <a href="#">Electronics and Communication Engineering (ECE)</a>
-                    <a href="#">Mechanical Engineering (MEC)</a>
-                    <a href="#">Electrical & Electronics Engineering (EEE)</a>
-                    <a href="#">Civil Engineering (CIV)</a>
-                    <a href="#">Business Administration (MBA)</a>
-                    <a href="#">Freshman Engineering (FED)</a>
-                    </div>
-                  </div>  
+               <a href="#">Admission</a> 
+               <div class="dropdown">
+                <button class="dropbtn">Academics 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Academic Calendar</a>
+                  <a href="#">Academic Regulations</a>
+                  <a href="#">Curriculum and Syllabus</a>
+                  <a href="#">Teaching and Evaluation</a>
+                  <a href="#">Outcome Based Education</a>
+                </div>
+              </div>  
+               <a href="#">Autonomous</a>
+               <a href="#">Departments</a> 
                <a href="#">Student Corner</a> 
                <a href="#">Research & Innovation </a>  
                <a href="#">Facilities</a> 
@@ -80,12 +156,103 @@
                <a href="#">Gallery</a> 
                <a href="#">T & P</a>  
             </div>
-         </nav>
-         <div class="image-container">
-            <div><img src="https://photos.wikimapia.org/p/00/00/75/74/43_big.jpg"></div>
-            <div>https://universityinnovation.org/images/7/74/Pvpwideangle.jpg</div>
-            <div></div>
-        </div>
+            <div class="slideshow-container">
 
+                <div class="mySlides fade">
+                  <img src="https://www.pvpsiddhartha.ac.in/new_images/SIH1.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="https://www.pvpsiddhartha.ac.in/new_images/6.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="https://www.pvpsiddhartha.ac.in/new_images/IBM_11.5_F.jpg" style="width:100%">
+                </div>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                </div>
+                
+                <script>
+                let slideIndex = 0;
+                showSlides();
+                
+                function showSlides() {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                  setTimeout(showSlides, 3000); // Change image every 2 seconds
+                }
+                </script>
+                <div class="container">
+<div class="main-section">
+
+   <div class="event">
+      <h2 class="heading">Campus News</h2>
+      <div>
+         <marquee direction="up" scrollamount="7" style="height:400px;">
+            <ul>
+               <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+               <li>Desktop publishing software like Aldus PageMaker including versions Lorem Ipsum</li>
+               <li>Many desktop publishing packages and web page editors now use</li>
+               <li>Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</li>
+               <li>Welcome To The Best Private University in MP</li>
+               <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+               <li>Desktop publishing software like Aldus PageMaker including versions of Ipsum</li>
+            </ul>
+         </marquee>
+      </div>
+   </div>
+   
+   <div class="event">
+      <h2 class="heading">Events</h2>
+      <div>
+         <marquee direction="up" scrollamount="7" style="height:400px;">
+            <ul>
+               <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+               <li>Desktop publishing software like Aldus PageMaker including versions Lorem Ipsum</li>
+               <li>Many desktop publishing packages and web page editors now use</li>
+               <li>Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</li>
+               <li>Welcome To The Best Private University in MP</li>
+               <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+               <li>Desktop publishing software like Aldus PageMaker including versions of Ipsum</li>
+            </ul>
+         </marquee>
+      </div>
+   </div>
+   
+   <div class="event">
+      <h2 class="heading">Notice Boards</h2>
+      <div>
+         <marquee direction="up" scrollamount="7" style="height:400px;">
+            <ul>
+               <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+               <li>Desktop publishing software like Aldus PageMaker including of Lorem Ipsum</li>
+               <li>Many desktop publishing packages and web page editors now use</li>
+               <li>Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</li>
+               <li>Welcome To The Best Private University in MP</li>
+               <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
+               <li>Desktop publishing software like Aldus PageMaker including versions of Ipsum</li>
+            </ul>
+         </marquee>
+      </div>
+   </div>
+</div>
 </body>
 </html>
